@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/main/index.js",
-    "test": "jest",
+    "test": "jest --watchAll",
     "test:staged": "jest"
   },
   "husky": {
@@ -17,7 +17,7 @@
   "lint-staged": {
     "*.js": [
       "standard --fix",
-      "npm run test:staged",
+      "yarn test:staged",
       "git add"
     ]
   },
