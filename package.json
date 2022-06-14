@@ -17,7 +17,7 @@
   "lint-staged": {
     "*.js": [
       "standard --fix",
-      "yarn test:staged",
+      "npm run test:staged",
       "git add"
     ]
   },
