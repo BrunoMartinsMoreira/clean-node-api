@@ -1,5 +1,11 @@
 class LoginRouter {
-  route () {}
+  route (httpRequest) {
+    if (!httpRequest.body.email) {
+      return {
+        statusCode: 400
+      }
+    }
+  }
 }
 
 describe('Login Roter', () => {
